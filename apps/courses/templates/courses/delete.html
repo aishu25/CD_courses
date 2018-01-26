@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Delete</title>
+	<style type="text/css">
+		#wapper{
+			margin: 20px;
+			padding: 20px;
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			border: 1px solid black;
+			font-size: 20px;
+		}
+		.button {
+		    background-color: #4CAF50;
+		    border: none;
+		    color: white;
+		    width: 100px;
+		    padding: 8px ;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 15px;
+		    margin: 3px;
+		    cursor: pointer;
+		}
+	</style>
+</head>
+	<body>
+		<h3>Are you sure you want to delete this Course ?</h3>
+		Name : <p>{{ courses.course_name }}</p>
+		Description : <p>{{ courses.desc }}</p>
+
+		<a href="/delete/{{ courses.id }}">Yes</a>
+		<a href="/">No</a>
+	</body>
+</html>
